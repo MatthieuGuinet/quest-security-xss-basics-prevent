@@ -43,11 +43,10 @@
 
         const input = document.getElementById("token-question");
         const log = document.getElementById("token-answer");
-
+        // fix the innerHTML to textContent
         input.addEventListener("input", updateValue);
-
         function updateValue(e) {
-            log.innerHTML = e.target.value;
+            log.textContent = e.target.value;
         }
 
     </script>
